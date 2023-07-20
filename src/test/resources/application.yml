@@ -1,0 +1,4 @@
+security:
+  authentication:
+    header: Authorization
+    apikey: Bearer test_token

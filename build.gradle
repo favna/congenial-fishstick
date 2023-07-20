@@ -1,0 +1,85 @@
+buildscript {
+    ext {
+        springBootVersion = '3.1.1'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.owasp:dependency-check-gradle:8.3.1")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.owasp.dependencycheck'
+
+group = 'com.example'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xlint:unchecked', '-Xlint:deprecation']
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    springBootVersion = '3.1.1'
+    springCloudVersion = '2022.0.3'
+    springCloudServicesVersion = '4.0.3'
+    springdocVersion = '1.7.0'
+    lombokVersion = '1.18.28'
+}
+
+configurations.all {
+    exclude group: 'org.springframework.boot', module: 'spring-boot-starter-json'
+    exclude group: 'com.sun.xml.bind'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-security:${springBootVersion}")
+    implementation("org.springdoc:springdoc-openapi-webflux-ui:${springdocVersion}")
+
+    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    testCompileOnly("org.projectlombok:lombok:${lombokVersion}")
+    testAnnotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    testImplementation("org.springframework.security:spring-security-test:6.1.1")
+
+    testImplementation("org.springframework.cloud:spring-cloud-starter-contract-verifier:${springCloudServicesVersion}")
+    testImplementation("org.springframework.cloud:spring-cloud-starter-contract-stub-runner:${springCloudServicesVersion}")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:${springCloudServicesVersion}"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencyCheck {
+    format = 'CSV'
+    skip = true
+    failBuildOnCVSS = 11
+    suppressionFile = 'owasp-suppressions.xml'
+}

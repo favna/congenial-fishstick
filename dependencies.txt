@@ -12,22 +12,22 @@ No dependencies
 compileClasspath - Compile classpath for source set 'main'.
 +--- org.projectlombok:lombok:1.18.28
 +--- org.springframework.boot:spring-boot-starter-webflux:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1
-|    |    |    +--- org.springframework:spring-core:6.0.10
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.10
-|    |    |    \--- org.springframework:spring-context:6.0.10
-|    |    |         +--- org.springframework:spring-aop:6.0.10
-|    |    |         |    +--- org.springframework:spring-beans:6.0.10
-|    |    |         |    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         \--- org.springframework:spring-expression:6.0.10
-|    |    |              \--- org.springframework:spring-core:6.0.10 (*)
-|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.1
-|    |    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.1
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2
+|    |    |    +--- org.springframework:spring-core:6.0.11
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.11
+|    |    |    \--- org.springframework:spring-context:6.0.11
+|    |    |         +--- org.springframework:spring-aop:6.0.11
+|    |    |         |    +--- org.springframework:spring-beans:6.0.11
+|    |    |         |    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         \--- org.springframework:spring-expression:6.0.11
+|    |    |              \--- org.springframework:spring-core:6.0.11 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.2
+|    |    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.2
 |    |    |    +--- ch.qos.logback:logback-classic:1.4.8
 |    |    |    |    +--- ch.qos.logback:logback-core:1.4.8
 |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7
@@ -37,11 +37,11 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.7
 |    |    |         \--- org.slf4j:slf4j-api:2.0.7
 |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
 |    |    \--- org.yaml:snakeyaml:1.33
-|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1
-|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.8
-|    |         +--- io.netty:netty-codec-http:4.1.93.Final -> 4.1.94.Final
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1 -> 3.1.2
+|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.9
+|    |         +--- io.netty:netty-codec-http:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final
 |    |         |    |    \--- io.netty:netty-common:4.1.94.Final
@@ -64,14 +64,14 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |         |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         |    \--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-codec:4.1.94.Final (*)
-|    |         +--- io.netty:netty-codec-http2:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-codec-http2:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-resolver:4.1.94.Final (*)
@@ -83,12 +83,12 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-handler:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final
 |    |         |    \--- io.netty:netty-resolver-dns-classes-macos:4.1.94.Final
 |    |         |         +--- io.netty:netty-common:4.1.94.Final
 |    |         |         +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -98,9 +98,9 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |         |         +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.8
-|    |         |    +--- io.netty:netty-handler:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-handler-proxy:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.9
+|    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-handler-proxy:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -111,51 +111,51 @@ compileClasspath - Compile classpath for source set 'main'.
 |    |         |    |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    \--- io.projectreactor:reactor-core:3.5.7
+|    |         |    +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.94.Final (*)
+|    |         |    \--- io.projectreactor:reactor-core:3.5.8
 |    |         |         \--- org.reactivestreams:reactive-streams:1.0.4
-|    |         \--- io.projectreactor:reactor-core:3.5.7 (*)
-|    +--- org.springframework:spring-web:6.0.10
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1
-|    |         \--- io.micrometer:micrometer-commons:1.11.1
-|    \--- org.springframework:spring-webflux:6.0.10
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-web:6.0.10 (*)
-|         \--- io.projectreactor:reactor-core:3.5.7 (*)
+|    |         \--- io.projectreactor:reactor-core:3.5.8 (*)
+|    +--- org.springframework:spring-web:6.0.10 -> 6.0.11
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2
+|    |         \--- io.micrometer:micrometer-commons:1.11.2
+|    \--- org.springframework:spring-webflux:6.0.10 -> 6.0.11
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-web:6.0.11 (*)
+|         \--- io.projectreactor:reactor-core:3.5.8 (*)
 +--- org.springframework.boot:spring-boot-starter-security:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework:spring-aop:6.0.10 (*)
-|    +--- org.springframework.security:spring-security-config:6.1.1
-|    |    +--- org.springframework.security:spring-security-core:6.1.1
-|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.1
-|    |    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-expression:6.0.10 (*)
-|    |    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1 (*)
-|    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework.security:spring-security-web:6.1.1
-|         +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-aop:6.0.10 (*)
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-context:6.0.10 (*)
-|         +--- org.springframework:spring-expression:6.0.10 (*)
-|         \--- org.springframework:spring-web:6.0.10 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework:spring-aop:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework.security:spring-security-config:6.1.1 -> 6.1.2
+|    |    +--- org.springframework.security:spring-security-core:6.1.2
+|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.2
+|    |    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-expression:6.0.11 (*)
+|    |    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2 (*)
+|    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    \--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2
+|         +--- org.springframework.security:spring-security-core:6.1.2 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-aop:6.0.11 (*)
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-context:6.0.11 (*)
+|         +--- org.springframework:spring-expression:6.0.11 (*)
+|         \--- org.springframework:spring-web:6.0.11 (*)
 \--- org.springdoc:springdoc-openapi-webflux-ui:1.7.0
      +--- org.springdoc:springdoc-openapi-webflux-core:1.7.0
      |    +--- org.springdoc:springdoc-openapi-common:1.7.0
-     |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.1 (*)
-     |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.10 (*)
+     |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.2 (*)
+     |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.11 (*)
      |    |    \--- io.swagger.core.v3:swagger-core:2.2.9
      |    |         +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 -> 4.0.0
      |    |         |    \--- jakarta.activation:jakarta.activation-api:2.1.0 -> 2.1.2
@@ -188,7 +188,7 @@ compileClasspath - Compile classpath for source set 'main'.
      |    |         +--- io.swagger.core.v3:swagger-models:2.2.9
      |    |         |    \--- com.fasterxml.jackson.core:jackson-annotations:2.14.2 -> 2.15.2 (*)
      |    |         \--- jakarta.validation:jakarta.validation-api:2.0.2 -> 3.0.2
-     |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.10 (*)
+     |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.11 (*)
      \--- org.webjars:swagger-ui:4.18.2
 
 compileOnly - Compile only dependencies for source set 'main'. (n)
@@ -210,22 +210,22 @@ No dependencies
 
 productionRuntimeClasspath
 +--- org.springframework.boot:spring-boot-starter-webflux:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1
-|    |    |    +--- org.springframework:spring-core:6.0.10
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.10
-|    |    |    \--- org.springframework:spring-context:6.0.10
-|    |    |         +--- org.springframework:spring-aop:6.0.10
-|    |    |         |    +--- org.springframework:spring-beans:6.0.10
-|    |    |         |    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         \--- org.springframework:spring-expression:6.0.10
-|    |    |              \--- org.springframework:spring-core:6.0.10 (*)
-|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.1
-|    |    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.1
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2
+|    |    |    +--- org.springframework:spring-core:6.0.11
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.11
+|    |    |    \--- org.springframework:spring-context:6.0.11
+|    |    |         +--- org.springframework:spring-aop:6.0.11
+|    |    |         |    +--- org.springframework:spring-beans:6.0.11
+|    |    |         |    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         \--- org.springframework:spring-expression:6.0.11
+|    |    |              \--- org.springframework:spring-core:6.0.11 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.2
+|    |    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.2
 |    |    |    +--- ch.qos.logback:logback-classic:1.4.8
 |    |    |    |    +--- ch.qos.logback:logback-core:1.4.8
 |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7
@@ -235,11 +235,11 @@ productionRuntimeClasspath
 |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.7
 |    |    |         \--- org.slf4j:slf4j-api:2.0.7
 |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
 |    |    \--- org.yaml:snakeyaml:1.33
-|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1
-|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.8
-|    |         +--- io.netty:netty-codec-http:4.1.93.Final -> 4.1.94.Final
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1 -> 3.1.2
+|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.9
+|    |         +--- io.netty:netty-codec-http:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final
 |    |         |    |    \--- io.netty:netty-common:4.1.94.Final
@@ -262,14 +262,14 @@ productionRuntimeClasspath
 |    |         |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         |    \--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-codec:4.1.94.Final (*)
-|    |         +--- io.netty:netty-codec-http2:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-codec-http2:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-resolver:4.1.94.Final (*)
@@ -281,12 +281,12 @@ productionRuntimeClasspath
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-handler:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final
 |    |         |    \--- io.netty:netty-resolver-dns-classes-macos:4.1.94.Final
 |    |         |         +--- io.netty:netty-common:4.1.94.Final
 |    |         |         +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -296,9 +296,9 @@ productionRuntimeClasspath
 |    |         |         +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.8
-|    |         |    +--- io.netty:netty-handler:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-handler-proxy:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.9
+|    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-handler-proxy:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -309,51 +309,51 @@ productionRuntimeClasspath
 |    |         |    |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    \--- io.projectreactor:reactor-core:3.5.7
+|    |         |    +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.94.Final (*)
+|    |         |    \--- io.projectreactor:reactor-core:3.5.8
 |    |         |         \--- org.reactivestreams:reactive-streams:1.0.4
-|    |         \--- io.projectreactor:reactor-core:3.5.7 (*)
-|    +--- org.springframework:spring-web:6.0.10
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1
-|    |         \--- io.micrometer:micrometer-commons:1.11.1
-|    \--- org.springframework:spring-webflux:6.0.10
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-web:6.0.10 (*)
-|         \--- io.projectreactor:reactor-core:3.5.7 (*)
+|    |         \--- io.projectreactor:reactor-core:3.5.8 (*)
+|    +--- org.springframework:spring-web:6.0.10 -> 6.0.11
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2
+|    |         \--- io.micrometer:micrometer-commons:1.11.2
+|    \--- org.springframework:spring-webflux:6.0.10 -> 6.0.11
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-web:6.0.11 (*)
+|         \--- io.projectreactor:reactor-core:3.5.8 (*)
 +--- org.springframework.boot:spring-boot-starter-security:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework:spring-aop:6.0.10 (*)
-|    +--- org.springframework.security:spring-security-config:6.1.1
-|    |    +--- org.springframework.security:spring-security-core:6.1.1
-|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.1
-|    |    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-expression:6.0.10 (*)
-|    |    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1 (*)
-|    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework.security:spring-security-web:6.1.1
-|         +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-aop:6.0.10 (*)
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-context:6.0.10 (*)
-|         +--- org.springframework:spring-expression:6.0.10 (*)
-|         \--- org.springframework:spring-web:6.0.10 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework:spring-aop:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework.security:spring-security-config:6.1.1 -> 6.1.2
+|    |    +--- org.springframework.security:spring-security-core:6.1.2
+|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.2
+|    |    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-expression:6.0.11 (*)
+|    |    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2 (*)
+|    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    \--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2
+|         +--- org.springframework.security:spring-security-core:6.1.2 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-aop:6.0.11 (*)
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-context:6.0.11 (*)
+|         +--- org.springframework:spring-expression:6.0.11 (*)
+|         \--- org.springframework:spring-web:6.0.11 (*)
 \--- org.springdoc:springdoc-openapi-webflux-ui:1.7.0
      +--- org.springdoc:springdoc-openapi-webflux-core:1.7.0
      |    +--- org.springdoc:springdoc-openapi-common:1.7.0
-     |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.1 (*)
-     |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.10 (*)
+     |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.2 (*)
+     |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.11 (*)
      |    |    \--- io.swagger.core.v3:swagger-core:2.2.9
      |    |         +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 -> 4.0.0
      |    |         |    \--- jakarta.activation:jakarta.activation-api:2.1.0 -> 2.1.2
@@ -386,27 +386,27 @@ productionRuntimeClasspath
      |    |         +--- io.swagger.core.v3:swagger-models:2.2.9
      |    |         |    \--- com.fasterxml.jackson.core:jackson-annotations:2.14.2 -> 2.15.2 (*)
      |    |         \--- jakarta.validation:jakarta.validation-api:2.0.2 -> 3.0.2
-     |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.10 (*)
+     |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.11 (*)
      \--- org.webjars:swagger-ui:4.18.2
 
 runtimeClasspath - Runtime classpath of source set 'main'.
 +--- org.springframework.boot:spring-boot-starter-webflux:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1
-|    |    |    +--- org.springframework:spring-core:6.0.10
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.10
-|    |    |    \--- org.springframework:spring-context:6.0.10
-|    |    |         +--- org.springframework:spring-aop:6.0.10
-|    |    |         |    +--- org.springframework:spring-beans:6.0.10
-|    |    |         |    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         \--- org.springframework:spring-expression:6.0.10
-|    |    |              \--- org.springframework:spring-core:6.0.10 (*)
-|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.1
-|    |    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.1
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2
+|    |    |    +--- org.springframework:spring-core:6.0.11
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.11
+|    |    |    \--- org.springframework:spring-context:6.0.11
+|    |    |         +--- org.springframework:spring-aop:6.0.11
+|    |    |         |    +--- org.springframework:spring-beans:6.0.11
+|    |    |         |    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         \--- org.springframework:spring-expression:6.0.11
+|    |    |              \--- org.springframework:spring-core:6.0.11 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.2
+|    |    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.2
 |    |    |    +--- ch.qos.logback:logback-classic:1.4.8
 |    |    |    |    +--- ch.qos.logback:logback-core:1.4.8
 |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7
@@ -416,11 +416,11 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.7
 |    |    |         \--- org.slf4j:slf4j-api:2.0.7
 |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
 |    |    \--- org.yaml:snakeyaml:1.33
-|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1
-|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.8
-|    |         +--- io.netty:netty-codec-http:4.1.93.Final -> 4.1.94.Final
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1 -> 3.1.2
+|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.9
+|    |         +--- io.netty:netty-codec-http:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final
 |    |         |    |    \--- io.netty:netty-common:4.1.94.Final
@@ -443,14 +443,14 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |         |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         |    \--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-codec:4.1.94.Final (*)
-|    |         +--- io.netty:netty-codec-http2:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-codec-http2:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-resolver:4.1.94.Final (*)
@@ -462,12 +462,12 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-handler:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final
 |    |         |    \--- io.netty:netty-resolver-dns-classes-macos:4.1.94.Final
 |    |         |         +--- io.netty:netty-common:4.1.94.Final
 |    |         |         +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -477,9 +477,9 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |         |         +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.8
-|    |         |    +--- io.netty:netty-handler:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-handler-proxy:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.9
+|    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-handler-proxy:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -490,51 +490,51 @@ runtimeClasspath - Runtime classpath of source set 'main'.
 |    |         |    |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    \--- io.projectreactor:reactor-core:3.5.7
+|    |         |    +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.94.Final (*)
+|    |         |    \--- io.projectreactor:reactor-core:3.5.8
 |    |         |         \--- org.reactivestreams:reactive-streams:1.0.4
-|    |         \--- io.projectreactor:reactor-core:3.5.7 (*)
-|    +--- org.springframework:spring-web:6.0.10
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1
-|    |         \--- io.micrometer:micrometer-commons:1.11.1
-|    \--- org.springframework:spring-webflux:6.0.10
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-web:6.0.10 (*)
-|         \--- io.projectreactor:reactor-core:3.5.7 (*)
+|    |         \--- io.projectreactor:reactor-core:3.5.8 (*)
+|    +--- org.springframework:spring-web:6.0.10 -> 6.0.11
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2
+|    |         \--- io.micrometer:micrometer-commons:1.11.2
+|    \--- org.springframework:spring-webflux:6.0.10 -> 6.0.11
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-web:6.0.11 (*)
+|         \--- io.projectreactor:reactor-core:3.5.8 (*)
 +--- org.springframework.boot:spring-boot-starter-security:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework:spring-aop:6.0.10 (*)
-|    +--- org.springframework.security:spring-security-config:6.1.1
-|    |    +--- org.springframework.security:spring-security-core:6.1.1
-|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.1
-|    |    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-expression:6.0.10 (*)
-|    |    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1 (*)
-|    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework.security:spring-security-web:6.1.1
-|         +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-aop:6.0.10 (*)
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-context:6.0.10 (*)
-|         +--- org.springframework:spring-expression:6.0.10 (*)
-|         \--- org.springframework:spring-web:6.0.10 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework:spring-aop:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework.security:spring-security-config:6.1.1 -> 6.1.2
+|    |    +--- org.springframework.security:spring-security-core:6.1.2
+|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.2
+|    |    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-expression:6.0.11 (*)
+|    |    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2 (*)
+|    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    \--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2
+|         +--- org.springframework.security:spring-security-core:6.1.2 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-aop:6.0.11 (*)
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-context:6.0.11 (*)
+|         +--- org.springframework:spring-expression:6.0.11 (*)
+|         \--- org.springframework:spring-web:6.0.11 (*)
 \--- org.springdoc:springdoc-openapi-webflux-ui:1.7.0
      +--- org.springdoc:springdoc-openapi-webflux-core:1.7.0
      |    +--- org.springdoc:springdoc-openapi-common:1.7.0
-     |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.1 (*)
-     |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.10 (*)
+     |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.2 (*)
+     |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.11 (*)
      |    |    \--- io.swagger.core.v3:swagger-core:2.2.9
      |    |         +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 -> 4.0.0
      |    |         |    \--- jakarta.activation:jakarta.activation-api:2.1.0 -> 2.1.2
@@ -567,7 +567,7 @@ runtimeClasspath - Runtime classpath of source set 'main'.
      |    |         +--- io.swagger.core.v3:swagger-models:2.2.9
      |    |         |    \--- com.fasterxml.jackson.core:jackson-annotations:2.14.2 -> 2.15.2 (*)
      |    |         \--- jakarta.validation:jakarta.validation-api:2.0.2 -> 3.0.2
-     |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.10 (*)
+     |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.11 (*)
      \--- org.webjars:swagger-ui:4.18.2
 
 runtimeElements - Elements of runtime for main. (n)
@@ -581,22 +581,22 @@ testAnnotationProcessor - Annotation processors and their dependencies for sourc
 
 testCompileClasspath - Compile classpath for source set 'test'.
 +--- org.springframework.boot:spring-boot-starter-webflux:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1
-|    |    |    +--- org.springframework:spring-core:6.0.10
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.10
-|    |    |    \--- org.springframework:spring-context:6.0.10
-|    |    |         +--- org.springframework:spring-aop:6.0.10
-|    |    |         |    +--- org.springframework:spring-beans:6.0.10
-|    |    |         |    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         \--- org.springframework:spring-expression:6.0.10
-|    |    |              \--- org.springframework:spring-core:6.0.10 (*)
-|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.1
-|    |    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.1
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2
+|    |    |    +--- org.springframework:spring-core:6.0.11
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.11
+|    |    |    \--- org.springframework:spring-context:6.0.11
+|    |    |         +--- org.springframework:spring-aop:6.0.11
+|    |    |         |    +--- org.springframework:spring-beans:6.0.11
+|    |    |         |    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         \--- org.springframework:spring-expression:6.0.11
+|    |    |              \--- org.springframework:spring-core:6.0.11 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.2
+|    |    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.2
 |    |    |    +--- ch.qos.logback:logback-classic:1.4.8
 |    |    |    |    +--- ch.qos.logback:logback-core:1.4.8
 |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7
@@ -606,11 +606,11 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.7
 |    |    |         \--- org.slf4j:slf4j-api:2.0.7
 |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
 |    |    \--- org.yaml:snakeyaml:1.33
-|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1
-|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.8
-|    |         +--- io.netty:netty-codec-http:4.1.93.Final -> 4.1.94.Final
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1 -> 3.1.2
+|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.9
+|    |         +--- io.netty:netty-codec-http:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final
 |    |         |    |    \--- io.netty:netty-common:4.1.94.Final
@@ -633,14 +633,14 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |         |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         |    \--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-codec:4.1.94.Final (*)
-|    |         +--- io.netty:netty-codec-http2:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-codec-http2:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-resolver:4.1.94.Final (*)
@@ -652,12 +652,12 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-handler:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final
 |    |         |    \--- io.netty:netty-resolver-dns-classes-macos:4.1.94.Final
 |    |         |         +--- io.netty:netty-common:4.1.94.Final
 |    |         |         +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -667,9 +667,9 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |         |         +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.8
-|    |         |    +--- io.netty:netty-handler:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-handler-proxy:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.9
+|    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-handler-proxy:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -680,51 +680,51 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |         |    |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    \--- io.projectreactor:reactor-core:3.5.7
+|    |         |    +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.94.Final (*)
+|    |         |    \--- io.projectreactor:reactor-core:3.5.8
 |    |         |         \--- org.reactivestreams:reactive-streams:1.0.4
-|    |         \--- io.projectreactor:reactor-core:3.5.7 (*)
-|    +--- org.springframework:spring-web:6.0.10
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1
-|    |         \--- io.micrometer:micrometer-commons:1.11.1
-|    \--- org.springframework:spring-webflux:6.0.10
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-web:6.0.10 (*)
-|         \--- io.projectreactor:reactor-core:3.5.7 (*)
+|    |         \--- io.projectreactor:reactor-core:3.5.8 (*)
+|    +--- org.springframework:spring-web:6.0.10 -> 6.0.11
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2
+|    |         \--- io.micrometer:micrometer-commons:1.11.2
+|    \--- org.springframework:spring-webflux:6.0.10 -> 6.0.11
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-web:6.0.11 (*)
+|         \--- io.projectreactor:reactor-core:3.5.8 (*)
 +--- org.springframework.boot:spring-boot-starter-security:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework:spring-aop:6.0.10 (*)
-|    +--- org.springframework.security:spring-security-config:6.1.1
-|    |    +--- org.springframework.security:spring-security-core:6.1.1
-|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.1
-|    |    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-expression:6.0.10 (*)
-|    |    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1 (*)
-|    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework.security:spring-security-web:6.1.1
-|         +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-aop:6.0.10 (*)
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-context:6.0.10 (*)
-|         +--- org.springframework:spring-expression:6.0.10 (*)
-|         \--- org.springframework:spring-web:6.0.10 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework:spring-aop:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework.security:spring-security-config:6.1.1 -> 6.1.2
+|    |    +--- org.springframework.security:spring-security-core:6.1.2
+|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.2
+|    |    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-expression:6.0.11 (*)
+|    |    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2 (*)
+|    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    \--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2
+|         +--- org.springframework.security:spring-security-core:6.1.2 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-aop:6.0.11 (*)
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-context:6.0.11 (*)
+|         +--- org.springframework:spring-expression:6.0.11 (*)
+|         \--- org.springframework:spring-web:6.0.11 (*)
 +--- org.springdoc:springdoc-openapi-webflux-ui:1.7.0
 |    +--- org.springdoc:springdoc-openapi-webflux-core:1.7.0
 |    |    +--- org.springdoc:springdoc-openapi-common:1.7.0
-|    |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.1 (*)
-|    |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.10 (*)
+|    |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.2 (*)
+|    |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.11 (*)
 |    |    |    \--- io.swagger.core.v3:swagger-core:2.2.9
 |    |    |         +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 -> 4.0.0
 |    |    |         |    \--- jakarta.activation:jakarta.activation-api:2.1.0 -> 2.1.2
@@ -757,17 +757,17 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    |         +--- io.swagger.core.v3:swagger-models:2.2.9
 |    |    |         |    \--- com.fasterxml.jackson.core:jackson-annotations:2.14.2 -> 2.15.2 (*)
 |    |    |         \--- jakarta.validation:jakarta.validation-api:2.0.2 -> 3.0.2
-|    |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.10 (*)
+|    |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.11 (*)
 |    \--- org.webjars:swagger-ui:4.18.2
 +--- org.projectlombok:lombok:1.18.28
 +--- org.springframework.boot:spring-boot-starter-test:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework.boot:spring-boot-test:3.1.1
-|    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-test:3.1.1 (*)
-|    |    \--- org.springframework.boot:spring-boot-autoconfigure:3.1.1 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework.boot:spring-boot-test:3.1.1 -> 3.1.2
+|    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-test:3.1.2 (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:3.1.2 (*)
 |    +--- com.jayway.jsonpath:json-path:2.8.0
 |    +--- jakarta.xml.bind:jakarta.xml.bind-api:4.0.0 (*)
 |    +--- net.minidev:json-smart:2.4.11
@@ -800,46 +800,46 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    \--- org.mockito:mockito-core:4.8.1 (*)
 |    +--- org.skyscreamer:jsonassert:1.5.1
 |    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
-|    +--- org.springframework:spring-core:6.0.10 (*)
-|    +--- org.springframework:spring-test:6.0.10
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
+|    +--- org.springframework:spring-core:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework:spring-test:6.0.10 -> 6.0.11
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
 |    \--- org.xmlunit:xmlunit-core:2.9.1
 +--- org.springframework.security:spring-security-test:6.1.1
-|    +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|    +--- org.springframework.security:spring-security-web:6.1.1 (*)
-|    +--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework:spring-test:6.0.10 (*)
-+--- org.springframework.cloud:spring-cloud-starter-contract-verifier:4.0.3
-|    +--- org.springframework.cloud:spring-cloud-contract-verifier:4.0.3
+|    +--- org.springframework.security:spring-security-core:6.1.1 -> 6.1.2 (*)
+|    +--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2 (*)
+|    +--- org.springframework:spring-core:6.0.10 -> 6.0.11 (*)
+|    \--- org.springframework:spring-test:6.0.10 -> 6.0.11 (*)
++--- org.springframework.cloud:spring-cloud-starter-contract-verifier:3.1.8
+|    +--- org.springframework.cloud:spring-cloud-contract-verifier:3.1.8 -> 4.0.3
 |    |    +--- org.springframework.cloud:spring-cloud-contract-spec:4.0.3
 |    |    |    +--- org.springframework.cloud:spring-cloud-contract-spec-java:4.0.3
-|    |    |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12
-|    |    |    |    |    \--- org.apache.groovy:groovy-bom:4.0.12
-|    |    |    |    |         +--- org.apache.groovy:groovy:4.0.12 (c)
-|    |    |    |    |         +--- org.apache.groovy:groovy-json:4.0.12 (c)
-|    |    |    |    |         +--- org.apache.groovy:groovy-nio:4.0.12 (c)
-|    |    |    |    |         \--- org.apache.groovy:groovy-xml:4.0.12 (c)
-|    |    |    |    +--- org.springframework:spring-core:6.0.9 -> 6.0.10 (*)
+|    |    |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13
+|    |    |    |    |    \--- org.apache.groovy:groovy-bom:4.0.13
+|    |    |    |    |         +--- org.apache.groovy:groovy:4.0.13 (c)
+|    |    |    |    |         +--- org.apache.groovy:groovy-json:4.0.13 (c)
+|    |    |    |    |         +--- org.apache.groovy:groovy-nio:4.0.13 (c)
+|    |    |    |    |         \--- org.apache.groovy:groovy-xml:4.0.13 (c)
+|    |    |    |    +--- org.springframework:spring-core:6.0.9 -> 6.0.11 (*)
 |    |    |    |    +--- dk.brics:automaton:1.12-4
 |    |    |    |    +--- org.apache.commons:commons-text:1.10.0
 |    |    |    |    |    \--- org.apache.commons:commons-lang3:3.12.0
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.9 -> 6.0.10
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.9 -> 6.0.11
 |    |    |    \--- org.springframework.cloud:spring-cloud-contract-spec-groovy:4.0.3
 |    |    |         +--- org.springframework.cloud:spring-cloud-contract-spec-java:4.0.3 (*)
-|    |    |         +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12 (*)
-|    |    |         +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.12
-|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.12 (*)
-|    |    |         |    \--- org.apache.groovy:groovy:4.0.12 (*)
-|    |    |         +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.12
-|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.12 (*)
-|    |    |         |    \--- org.apache.groovy:groovy:4.0.12 (*)
-|    |    |         +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.12
-|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.12 (*)
-|    |    |         |    \--- org.apache.groovy:groovy:4.0.12 (*)
+|    |    |         +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13 (*)
+|    |    |         +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.13
+|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.13 (*)
+|    |    |         |    \--- org.apache.groovy:groovy:4.0.13 (*)
+|    |    |         +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.13
+|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.13 (*)
+|    |    |         |    \--- org.apache.groovy:groovy:4.0.13 (*)
+|    |    |         +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.13
+|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.13 (*)
+|    |    |         |    \--- org.apache.groovy:groovy:4.0.13 (*)
 |    |    |         +--- org.apache.commons:commons-text:1.10.0 (*)
-|    |    |         \--- org.springframework:spring-jcl:6.0.9 -> 6.0.10
+|    |    |         \--- org.springframework:spring-jcl:6.0.9 -> 6.0.11
 |    |    +--- org.springframework.cloud:spring-cloud-contract-shade:4.0.3
-|    |    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.0.7 -> 3.1.1 (*)
+|    |    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.0.7 -> 3.1.2 (*)
 |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.14.3 -> 2.15.2 (*)
 |    |    +--- org.apache.commons:commons-text:1.10.0 (*)
 |    |    +--- javax.inject:javax.inject:1
@@ -850,10 +850,10 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    +--- com.rackspace.eclipse.webtools.sourceediting:org.eclipse.wst.xml.xpath2.processor:2.1.100
 |    |    |    +--- edu.princeton.cup:java-cup:10k
 |    |    |    \--- com.ibm.icu:icu4j:4.6
-|    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.12 (*)
+|    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.13 (*)
 |    |    +--- org.skyscreamer:jsonassert:1.5.1 (*)
 |    |    +--- com.github.jknack:handlebars:4.3.0
 |    |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 2.0.7
@@ -873,9 +873,9 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    |         +--- net.javacrumbs.json-unit:json-unit-core:2.32.0 (*)
 |    |    |         \--- com.jayway.jsonpath:json-path:2.4.0 -> 2.8.0
 |    |    \--- org.junit.jupiter:junit-jupiter-api:5.9.3 (*)
-|    +--- io.rest-assured:rest-assured:5.2.1 -> 5.3.1
-|    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.12 (*)
+|    +--- io.rest-assured:rest-assured:4.4.0 -> 5.3.1
+|    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.13 (*)
 |    |    +--- org.apache.httpcomponents:httpclient:4.5.13
 |    |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.16
 |    |    |    +--- commons-logging:commons-logging:1.2
@@ -885,45 +885,37 @@ testCompileClasspath - Compile classpath for source set 'test'.
 |    |    +--- org.hamcrest:hamcrest:2.2
 |    |    +--- org.ccil.cowan.tagsoup:tagsoup:1.2.1
 |    |    +--- io.rest-assured:json-path:5.3.1
-|    |    |    +--- org.apache.groovy:groovy-json:4.0.11 -> 4.0.12 (*)
-|    |    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
+|    |    |    +--- org.apache.groovy:groovy-json:4.0.11 -> 4.0.13 (*)
+|    |    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
 |    |    |    \--- io.rest-assured:rest-assured-common:5.3.1
-|    |    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
+|    |    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
 |    |    |         \--- org.apache.commons:commons-lang3:3.11 -> 3.12.0
 |    |    \--- io.rest-assured:xml-path:5.3.1
-|    |         +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.12 (*)
-|    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
+|    |         +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.13 (*)
+|    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
 |    |         +--- io.rest-assured:rest-assured-common:5.3.1 (*)
 |    |         +--- org.apache.commons:commons-lang3:3.11 -> 3.12.0
 |    |         \--- org.ccil.cowan.tagsoup:tagsoup:1.2.1
-|    +--- io.rest-assured:spring-mock-mvc:5.2.1 -> 5.3.1
+|    +--- io.rest-assured:spring-mock-mvc:4.4.0 -> 5.3.1
 |    |    +--- io.rest-assured:rest-assured:5.3.1 (*)
-|    |    +--- io.rest-assured:spring-commons:5.3.1
-|    |    |    \--- io.rest-assured:rest-assured:5.3.1 (*)
-|    |    +--- org.springframework:spring-test:4.3.23.RELEASE -> 6.0.10 (*)
-|    |    \--- org.springframework:spring-webmvc:4.3.23.RELEASE -> 6.0.10
-|    |         +--- org.springframework:spring-aop:6.0.10 (*)
-|    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |         +--- org.springframework:spring-context:6.0.10 (*)
-|    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |         +--- org.springframework:spring-expression:6.0.10 (*)
-|    |         \--- org.springframework:spring-web:6.0.10 (*)
+|    |    \--- io.rest-assured:spring-commons:5.3.1
+|    |         \--- io.rest-assured:rest-assured:5.3.1 (*)
 |    +--- com.toomuchcoding.jsonassert:jsonassert:0.6.2 (*)
-|    +--- cglib:cglib:3.3.0
+|    +--- cglib:cglib:3.2.11
 |    |    \--- org.ow2.asm:asm:7.1 -> 9.3
-|    \--- org.springframework.boot:spring-boot-starter-test:3.0.7 -> 3.1.1 (*)
-\--- org.springframework.cloud:spring-cloud-starter-contract-stub-runner:4.0.3
-     +--- org.springframework.cloud:spring-cloud-contract-stub-runner:4.0.3
+|    \--- org.springframework.boot:spring-boot-starter-test:2.6.15 -> 3.1.1 (*)
+\--- org.springframework.cloud:spring-cloud-starter-contract-stub-runner:3.1.8
+     +--- org.springframework.cloud:spring-cloud-contract-stub-runner:3.1.8 -> 4.0.3
      |    +--- org.springframework.cloud:spring-cloud-contract-verifier:4.0.3 (*)
      |    +--- org.springframework.cloud:spring-cloud-contract-shade:4.0.3
      |    +--- org.springframework.cloud:spring-cloud-contract-converters:4.0.3
-     |    |    +--- org.springframework:spring-context:6.0.9 -> 6.0.10 (*)
+     |    |    +--- org.springframework:spring-context:6.0.9 -> 6.0.11 (*)
      |    |    +--- org.springframework.cloud:spring-cloud-contract-spec:4.0.3 (*)
      |    |    +--- org.springframework.cloud:spring-cloud-contract-shade:4.0.3
      |    |    +--- org.springframework.cloud:spring-cloud-contract-verifier:4.0.3 (*)
-     |    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.7 -> 3.1.1 (*)
-     |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12 (*)
-     |    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.12 (*)
+     |    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.7 -> 3.1.2 (*)
+     |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13 (*)
+     |    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.13 (*)
      |    |    \--- com.github.tomakehurst:wiremock-jre8-standalone:2.35.0
      |    +--- org.springframework.cloud:spring-cloud-contract-spec:4.0.3 (*)
      |    +--- org.eclipse.jgit:org.eclipse.jgit:6.3.0.202209071007-r -> 6.4.0.202211300538-r
@@ -944,11 +936,11 @@ testCompileClasspath - Compile classpath for source set 'test'.
      |         +--- net.java.dev.jna:jna:4.1.0
      |         \--- net.java.dev.jna:jna-platform:4.1.0
      |              \--- net.java.dev.jna:jna:4.1.0
-     +--- org.springframework.boot:spring-boot-starter-test:3.0.7 -> 3.1.1 (*)
-     +--- org.springframework.cloud:spring-cloud-contract-wiremock:4.0.3
-     |    +--- org.springframework.boot:spring-boot-starter:3.0.7 -> 3.1.1 (*)
+     +--- org.springframework.boot:spring-boot-starter-test:2.6.15 -> 3.1.1 (*)
+     +--- org.springframework.cloud:spring-cloud-contract-wiremock:3.1.8 -> 4.0.3
+     |    +--- org.springframework.boot:spring-boot-starter:3.0.7 -> 3.1.2 (*)
      |    +--- jakarta.servlet:jakarta.servlet-api:6.0.0
-     |    +--- org.springframework:spring-web:6.0.9 -> 6.0.10 (*)
+     |    +--- org.springframework:spring-web:6.0.9 -> 6.0.11 (*)
      |    +--- com.github.tomakehurst:wiremock-jre8-standalone:2.35.0
      |    +--- org.apache.httpcomponents.client5:httpclient5:5.1.4 -> 5.2.1
      |    |    +--- org.apache.httpcomponents.core5:httpcore5:5.2 -> 5.2.2
@@ -997,7 +989,7 @@ testCompileClasspath - Compile classpath for source set 'test'.
      |         |    +--- org.apache.maven.resolver:maven-resolver-util:1.1.1 (*)
      |         |    +--- org.apache.httpcomponents:httpclient:4.5.4 -> 4.5.13 (*)
      |         |    \--- org.apache.httpcomponents:httpcore:4.4.8 -> 4.4.16
-     |         \--- org.springframework:spring-core:6.0.9 -> 6.0.10 (*)
+     |         \--- org.springframework:spring-core:6.0.9 -> 6.0.11 (*)
      +--- org.apache.maven.resolver:maven-resolver-api:1.4.1
      \--- org.sonatype.sisu:sisu-inject-plexus:2.6.0
           +--- org.codehaus.plexus:plexus-component-annotations:1.5.5 -> 1.7.1
@@ -1024,27 +1016,27 @@ testCompileOnly - Compile only dependencies for source set 'test'. (n)
 testImplementation - Implementation only dependencies for source set 'test'. (n)
 +--- org.springframework.boot:spring-boot-starter-test:3.1.1 (n)
 +--- org.springframework.security:spring-security-test:6.1.1 (n)
-+--- org.springframework.cloud:spring-cloud-starter-contract-verifier:4.0.3 (n)
-\--- org.springframework.cloud:spring-cloud-starter-contract-stub-runner:4.0.3 (n)
++--- org.springframework.cloud:spring-cloud-starter-contract-verifier:3.1.8 (n)
+\--- org.springframework.cloud:spring-cloud-starter-contract-stub-runner:3.1.8 (n)
 
 testRuntimeClasspath - Runtime classpath of source set 'test'.
 +--- org.springframework.boot:spring-boot-starter-webflux:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1
-|    |    |    +--- org.springframework:spring-core:6.0.10
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.10
-|    |    |    \--- org.springframework:spring-context:6.0.10
-|    |    |         +--- org.springframework:spring-aop:6.0.10
-|    |    |         |    +--- org.springframework:spring-beans:6.0.10
-|    |    |         |    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         |    \--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |         \--- org.springframework:spring-expression:6.0.10
-|    |    |              \--- org.springframework:spring-core:6.0.10 (*)
-|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.1
-|    |    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.1
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2
+|    |    |    +--- org.springframework:spring-core:6.0.11
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.11
+|    |    |    \--- org.springframework:spring-context:6.0.11
+|    |    |         +--- org.springframework:spring-aop:6.0.11
+|    |    |         |    +--- org.springframework:spring-beans:6.0.11
+|    |    |         |    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         |    \--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |         +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |         \--- org.springframework:spring-expression:6.0.11
+|    |    |              \--- org.springframework:spring-core:6.0.11 (*)
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:3.1.2
+|    |    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:3.1.2
 |    |    |    +--- ch.qos.logback:logback-classic:1.4.8
 |    |    |    |    +--- ch.qos.logback:logback-core:1.4.8
 |    |    |    |    \--- org.slf4j:slf4j-api:2.0.7
@@ -1054,11 +1046,11 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    |    \--- org.slf4j:jul-to-slf4j:2.0.7
 |    |    |         \--- org.slf4j:slf4j-api:2.0.7
 |    |    +--- jakarta.annotation:jakarta.annotation-api:2.1.1
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
 |    |    \--- org.yaml:snakeyaml:1.33
-|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1
-|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.8
-|    |         +--- io.netty:netty-codec-http:4.1.93.Final -> 4.1.94.Final
+|    +--- org.springframework.boot:spring-boot-starter-reactor-netty:3.1.1 -> 3.1.2
+|    |    \--- io.projectreactor.netty:reactor-netty-http:1.1.9
+|    |         +--- io.netty:netty-codec-http:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final
 |    |         |    |    \--- io.netty:netty-common:4.1.94.Final
@@ -1081,14 +1073,14 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |         |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         |    \--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-codec:4.1.94.Final (*)
-|    |         +--- io.netty:netty-codec-http2:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-codec-http2:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-resolver:4.1.94.Final (*)
@@ -1100,12 +1092,12 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    \--- io.netty:netty-handler:4.1.94.Final (*)
-|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final
 |    |         |    \--- io.netty:netty-resolver-dns-classes-macos:4.1.94.Final
 |    |         |         +--- io.netty:netty-common:4.1.94.Final
 |    |         |         +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.netty:netty-transport-native-epoll:4.1.94.Final
 |    |         |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -1115,9 +1107,9 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |         |         +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |         +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |         \--- io.netty:netty-transport-native-unix-common:4.1.94.Final (*)
-|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.8
-|    |         |    +--- io.netty:netty-handler:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-handler-proxy:4.1.93.Final -> 4.1.94.Final
+|    |         +--- io.projectreactor.netty:reactor-netty-core:1.1.9
+|    |         |    +--- io.netty:netty-handler:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-handler-proxy:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-common:4.1.94.Final
 |    |         |    |    +--- io.netty:netty-buffer:4.1.94.Final (*)
 |    |         |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
@@ -1128,51 +1120,51 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |         |    |    |    +--- io.netty:netty-transport:4.1.94.Final (*)
 |    |         |    |    |    \--- io.netty:netty-codec:4.1.94.Final (*)
 |    |         |    |    \--- io.netty:netty-codec-http:4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.93.Final -> 4.1.94.Final (*)
-|    |         |    \--- io.projectreactor:reactor-core:3.5.7
+|    |         |    +--- io.netty:netty-resolver-dns:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-resolver-dns-native-macos:4.1.94.Final (*)
+|    |         |    +--- io.netty:netty-transport-native-epoll:4.1.94.Final (*)
+|    |         |    \--- io.projectreactor:reactor-core:3.5.8
 |    |         |         \--- org.reactivestreams:reactive-streams:1.0.4
-|    |         \--- io.projectreactor:reactor-core:3.5.7 (*)
-|    +--- org.springframework:spring-web:6.0.10
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1
-|    |         \--- io.micrometer:micrometer-commons:1.11.1
-|    \--- org.springframework:spring-webflux:6.0.10
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-web:6.0.10 (*)
-|         \--- io.projectreactor:reactor-core:3.5.7 (*)
+|    |         \--- io.projectreactor:reactor-core:3.5.8 (*)
+|    +--- org.springframework:spring-web:6.0.10 -> 6.0.11
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2
+|    |         \--- io.micrometer:micrometer-commons:1.11.2
+|    \--- org.springframework:spring-webflux:6.0.10 -> 6.0.11
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-web:6.0.11 (*)
+|         \--- io.projectreactor:reactor-core:3.5.8 (*)
 +--- org.springframework.boot:spring-boot-starter-security:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework:spring-aop:6.0.10 (*)
-|    +--- org.springframework.security:spring-security-config:6.1.1
-|    |    +--- org.springframework.security:spring-security-core:6.1.1
-|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.1
-|    |    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-core:6.0.10 (*)
-|    |    |    +--- org.springframework:spring-expression:6.0.10 (*)
-|    |    |    \--- io.micrometer:micrometer-observation:1.10.8 -> 1.11.1 (*)
-|    |    +--- org.springframework:spring-aop:6.0.10 (*)
-|    |    +--- org.springframework:spring-beans:6.0.10 (*)
-|    |    +--- org.springframework:spring-context:6.0.10 (*)
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework.security:spring-security-web:6.1.1
-|         +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|         +--- org.springframework:spring-core:6.0.10 (*)
-|         +--- org.springframework:spring-aop:6.0.10 (*)
-|         +--- org.springframework:spring-beans:6.0.10 (*)
-|         +--- org.springframework:spring-context:6.0.10 (*)
-|         +--- org.springframework:spring-expression:6.0.10 (*)
-|         \--- org.springframework:spring-web:6.0.10 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework:spring-aop:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework.security:spring-security-config:6.1.1 -> 6.1.2
+|    |    +--- org.springframework.security:spring-security-core:6.1.2
+|    |    |    +--- org.springframework.security:spring-security-crypto:6.1.2
+|    |    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-core:6.0.11 (*)
+|    |    |    +--- org.springframework:spring-expression:6.0.11 (*)
+|    |    |    \--- io.micrometer:micrometer-observation:1.10.9 -> 1.11.2 (*)
+|    |    +--- org.springframework:spring-aop:6.0.11 (*)
+|    |    +--- org.springframework:spring-beans:6.0.11 (*)
+|    |    +--- org.springframework:spring-context:6.0.11 (*)
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
+|    \--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2
+|         +--- org.springframework.security:spring-security-core:6.1.2 (*)
+|         +--- org.springframework:spring-core:6.0.11 (*)
+|         +--- org.springframework:spring-aop:6.0.11 (*)
+|         +--- org.springframework:spring-beans:6.0.11 (*)
+|         +--- org.springframework:spring-context:6.0.11 (*)
+|         +--- org.springframework:spring-expression:6.0.11 (*)
+|         \--- org.springframework:spring-web:6.0.11 (*)
 +--- org.springdoc:springdoc-openapi-webflux-ui:1.7.0
 |    +--- org.springdoc:springdoc-openapi-webflux-core:1.7.0
 |    |    +--- org.springdoc:springdoc-openapi-common:1.7.0
-|    |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.1 (*)
-|    |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.10 (*)
+|    |    |    +--- org.springframework.boot:spring-boot-autoconfigure:2.7.10 -> 3.1.2 (*)
+|    |    |    +--- org.springframework:spring-web:5.3.26 -> 6.0.11 (*)
 |    |    |    \--- io.swagger.core.v3:swagger-core:2.2.9
 |    |    |         +--- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 -> 4.0.0
 |    |    |         |    \--- jakarta.activation:jakarta.activation-api:2.1.0 -> 2.1.2
@@ -1205,16 +1197,16 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    |         +--- io.swagger.core.v3:swagger-models:2.2.9
 |    |    |         |    \--- com.fasterxml.jackson.core:jackson-annotations:2.14.2 -> 2.15.2 (*)
 |    |    |         \--- jakarta.validation:jakarta.validation-api:2.0.2 -> 3.0.2
-|    |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.10 (*)
+|    |    \--- org.springframework:spring-webflux:5.3.26 -> 6.0.11 (*)
 |    \--- org.webjars:swagger-ui:4.18.2
 +--- org.springframework.boot:spring-boot-starter-test:3.1.1
-|    +--- org.springframework.boot:spring-boot-starter:3.1.1 (*)
-|    +--- org.springframework.boot:spring-boot-test:3.1.1
-|    |    \--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.1.1
-|    |    +--- org.springframework.boot:spring-boot:3.1.1 (*)
-|    |    +--- org.springframework.boot:spring-boot-test:3.1.1 (*)
-|    |    \--- org.springframework.boot:spring-boot-autoconfigure:3.1.1 (*)
+|    +--- org.springframework.boot:spring-boot-starter:3.1.1 -> 3.1.2 (*)
+|    +--- org.springframework.boot:spring-boot-test:3.1.1 -> 3.1.2
+|    |    \--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.1.1 -> 3.1.2
+|    |    +--- org.springframework.boot:spring-boot:3.1.2 (*)
+|    |    +--- org.springframework.boot:spring-boot-test:3.1.2 (*)
+|    |    \--- org.springframework.boot:spring-boot-autoconfigure:3.1.2 (*)
 |    +--- com.jayway.jsonpath:json-path:2.8.0
 |    |    +--- net.minidev:json-smart:2.4.10 -> 2.4.11
 |    |    |    \--- net.minidev:accessors-smart:2.4.11
@@ -1257,46 +1249,46 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    \--- org.junit.jupiter:junit-jupiter-api:5.9.1 -> 5.9.3 (*)
 |    +--- org.skyscreamer:jsonassert:1.5.1
 |    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
-|    +--- org.springframework:spring-core:6.0.10 (*)
-|    +--- org.springframework:spring-test:6.0.10
-|    |    \--- org.springframework:spring-core:6.0.10 (*)
+|    +--- org.springframework:spring-core:6.0.10 -> 6.0.11 (*)
+|    +--- org.springframework:spring-test:6.0.10 -> 6.0.11
+|    |    \--- org.springframework:spring-core:6.0.11 (*)
 |    \--- org.xmlunit:xmlunit-core:2.9.1
 +--- org.springframework.security:spring-security-test:6.1.1
-|    +--- org.springframework.security:spring-security-core:6.1.1 (*)
-|    +--- org.springframework.security:spring-security-web:6.1.1 (*)
-|    +--- org.springframework:spring-core:6.0.10 (*)
-|    \--- org.springframework:spring-test:6.0.10 (*)
-+--- org.springframework.cloud:spring-cloud-starter-contract-verifier:4.0.3
-|    +--- org.springframework.cloud:spring-cloud-contract-verifier:4.0.3
+|    +--- org.springframework.security:spring-security-core:6.1.1 -> 6.1.2 (*)
+|    +--- org.springframework.security:spring-security-web:6.1.1 -> 6.1.2 (*)
+|    +--- org.springframework:spring-core:6.0.10 -> 6.0.11 (*)
+|    \--- org.springframework:spring-test:6.0.10 -> 6.0.11 (*)
++--- org.springframework.cloud:spring-cloud-starter-contract-verifier:3.1.8
+|    +--- org.springframework.cloud:spring-cloud-contract-verifier:3.1.8 -> 4.0.3
 |    |    +--- org.springframework.cloud:spring-cloud-contract-spec:4.0.3
 |    |    |    +--- org.springframework.cloud:spring-cloud-contract-spec-java:4.0.3
-|    |    |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12
-|    |    |    |    |    \--- org.apache.groovy:groovy-bom:4.0.12
-|    |    |    |    |         +--- org.apache.groovy:groovy:4.0.12 (c)
-|    |    |    |    |         +--- org.apache.groovy:groovy-json:4.0.12 (c)
-|    |    |    |    |         +--- org.apache.groovy:groovy-nio:4.0.12 (c)
-|    |    |    |    |         \--- org.apache.groovy:groovy-xml:4.0.12 (c)
-|    |    |    |    +--- org.springframework:spring-core:6.0.9 -> 6.0.10 (*)
+|    |    |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13
+|    |    |    |    |    \--- org.apache.groovy:groovy-bom:4.0.13
+|    |    |    |    |         +--- org.apache.groovy:groovy:4.0.13 (c)
+|    |    |    |    |         +--- org.apache.groovy:groovy-json:4.0.13 (c)
+|    |    |    |    |         +--- org.apache.groovy:groovy-nio:4.0.13 (c)
+|    |    |    |    |         \--- org.apache.groovy:groovy-xml:4.0.13 (c)
+|    |    |    |    +--- org.springframework:spring-core:6.0.9 -> 6.0.11 (*)
 |    |    |    |    +--- dk.brics:automaton:1.12-4
 |    |    |    |    +--- org.apache.commons:commons-text:1.10.0
 |    |    |    |    |    \--- org.apache.commons:commons-lang3:3.12.0
-|    |    |    |    \--- org.springframework:spring-jcl:6.0.9 -> 6.0.10
+|    |    |    |    \--- org.springframework:spring-jcl:6.0.9 -> 6.0.11
 |    |    |    \--- org.springframework.cloud:spring-cloud-contract-spec-groovy:4.0.3
 |    |    |         +--- org.springframework.cloud:spring-cloud-contract-spec-java:4.0.3 (*)
-|    |    |         +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12 (*)
-|    |    |         +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.12
-|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.12 (*)
-|    |    |         |    \--- org.apache.groovy:groovy:4.0.12 (*)
-|    |    |         +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.12
-|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.12 (*)
-|    |    |         |    \--- org.apache.groovy:groovy:4.0.12 (*)
-|    |    |         +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.12
-|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.12 (*)
-|    |    |         |    \--- org.apache.groovy:groovy:4.0.12 (*)
+|    |    |         +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13 (*)
+|    |    |         +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.13
+|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.13 (*)
+|    |    |         |    \--- org.apache.groovy:groovy:4.0.13 (*)
+|    |    |         +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.13
+|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.13 (*)
+|    |    |         |    \--- org.apache.groovy:groovy:4.0.13 (*)
+|    |    |         +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.13
+|    |    |         |    +--- org.apache.groovy:groovy-bom:4.0.13 (*)
+|    |    |         |    \--- org.apache.groovy:groovy:4.0.13 (*)
 |    |    |         +--- org.apache.commons:commons-text:1.10.0 (*)
-|    |    |         \--- org.springframework:spring-jcl:6.0.9 -> 6.0.10
+|    |    |         \--- org.springframework:spring-jcl:6.0.9 -> 6.0.11
 |    |    +--- org.springframework.cloud:spring-cloud-contract-shade:4.0.3
-|    |    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.0.7 -> 3.1.1 (*)
+|    |    +--- org.springframework.boot:spring-boot-test-autoconfigure:3.0.7 -> 3.1.2 (*)
 |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.14.3 -> 2.15.2 (*)
 |    |    +--- org.apache.commons:commons-text:1.10.0 (*)
 |    |    +--- javax.inject:javax.inject:1
@@ -1307,10 +1299,10 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    +--- com.rackspace.eclipse.webtools.sourceediting:org.eclipse.wst.xml.xpath2.processor:2.1.100
 |    |    |    +--- edu.princeton.cup:java-cup:10k
 |    |    |    \--- com.ibm.icu:icu4j:4.6
-|    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.12 (*)
+|    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-json:4.0.0 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-xml:4.0.0 -> 4.0.13 (*)
 |    |    +--- org.skyscreamer:jsonassert:1.5.1 (*)
 |    |    +--- com.github.jknack:handlebars:4.3.0
 |    |    |    \--- org.slf4j:slf4j-api:1.7.32 -> 2.0.7
@@ -1330,9 +1322,9 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    |         +--- net.javacrumbs.json-unit:json-unit-core:2.32.0 (*)
 |    |    |         \--- com.jayway.jsonpath:json-path:2.4.0 -> 2.8.0 (*)
 |    |    \--- org.junit.jupiter:junit-jupiter-api:5.9.3 (*)
-|    +--- io.rest-assured:rest-assured:5.2.1 -> 5.3.1
-|    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
-|    |    +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.12 (*)
+|    +--- io.rest-assured:rest-assured:4.4.0 -> 5.3.1
+|    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
+|    |    +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.13 (*)
 |    |    +--- org.apache.httpcomponents:httpclient:4.5.13
 |    |    |    +--- org.apache.httpcomponents:httpcore:4.4.13 -> 4.4.16
 |    |    |    +--- commons-logging:commons-logging:1.2
@@ -1342,45 +1334,37 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
 |    |    +--- org.hamcrest:hamcrest:2.2
 |    |    +--- org.ccil.cowan.tagsoup:tagsoup:1.2.1
 |    |    +--- io.rest-assured:json-path:5.3.1
-|    |    |    +--- org.apache.groovy:groovy-json:4.0.11 -> 4.0.12 (*)
-|    |    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
+|    |    |    +--- org.apache.groovy:groovy-json:4.0.11 -> 4.0.13 (*)
+|    |    |    +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
 |    |    |    \--- io.rest-assured:rest-assured-common:5.3.1
-|    |    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
+|    |    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
 |    |    |         \--- org.apache.commons:commons-lang3:3.11 -> 3.12.0
 |    |    \--- io.rest-assured:xml-path:5.3.1
-|    |         +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.12 (*)
-|    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.12 (*)
+|    |         +--- org.apache.groovy:groovy-xml:4.0.11 -> 4.0.13 (*)
+|    |         +--- org.apache.groovy:groovy:4.0.11 -> 4.0.13 (*)
 |    |         +--- io.rest-assured:rest-assured-common:5.3.1 (*)
 |    |         +--- org.apache.commons:commons-lang3:3.11 -> 3.12.0
 |    |         \--- org.ccil.cowan.tagsoup:tagsoup:1.2.1
-|    +--- io.rest-assured:spring-mock-mvc:5.2.1 -> 5.3.1
+|    +--- io.rest-assured:spring-mock-mvc:4.4.0 -> 5.3.1
 |    |    +--- io.rest-assured:rest-assured:5.3.1 (*)
-|    |    +--- io.rest-assured:spring-commons:5.3.1
-|    |    |    \--- io.rest-assured:rest-assured:5.3.1 (*)
-|    |    +--- org.springframework:spring-test:4.3.23.RELEASE -> 6.0.10 (*)
-|    |    \--- org.springframework:spring-webmvc:4.3.23.RELEASE -> 6.0.10
-|    |         +--- org.springframework:spring-aop:6.0.10 (*)
-|    |         +--- org.springframework:spring-beans:6.0.10 (*)
-|    |         +--- org.springframework:spring-context:6.0.10 (*)
-|    |         +--- org.springframework:spring-core:6.0.10 (*)
-|    |         +--- org.springframework:spring-expression:6.0.10 (*)
-|    |         \--- org.springframework:spring-web:6.0.10 (*)
+|    |    \--- io.rest-assured:spring-commons:5.3.1
+|    |         \--- io.rest-assured:rest-assured:5.3.1 (*)
 |    +--- com.toomuchcoding.jsonassert:jsonassert:0.6.2 (*)
-|    +--- cglib:cglib:3.3.0
+|    +--- cglib:cglib:3.2.11
 |    |    \--- org.ow2.asm:asm:7.1 -> 9.3
-|    \--- org.springframework.boot:spring-boot-starter-test:3.0.7 -> 3.1.1 (*)
-\--- org.springframework.cloud:spring-cloud-starter-contract-stub-runner:4.0.3
-     +--- org.springframework.cloud:spring-cloud-contract-stub-runner:4.0.3
+|    \--- org.springframework.boot:spring-boot-starter-test:2.6.15 -> 3.1.1 (*)
+\--- org.springframework.cloud:spring-cloud-starter-contract-stub-runner:3.1.8
+     +--- org.springframework.cloud:spring-cloud-contract-stub-runner:3.1.8 -> 4.0.3
      |    +--- org.springframework.cloud:spring-cloud-contract-verifier:4.0.3 (*)
      |    +--- org.springframework.cloud:spring-cloud-contract-shade:4.0.3
      |    +--- org.springframework.cloud:spring-cloud-contract-converters:4.0.3
-     |    |    +--- org.springframework:spring-context:6.0.9 -> 6.0.10 (*)
+     |    |    +--- org.springframework:spring-context:6.0.9 -> 6.0.11 (*)
      |    |    +--- org.springframework.cloud:spring-cloud-contract-spec:4.0.3 (*)
      |    |    +--- org.springframework.cloud:spring-cloud-contract-shade:4.0.3
      |    |    +--- org.springframework.cloud:spring-cloud-contract-verifier:4.0.3 (*)
-     |    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.7 -> 3.1.1 (*)
-     |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.12 (*)
-     |    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.12 (*)
+     |    |    +--- org.springframework.boot:spring-boot-starter-logging:3.0.7 -> 3.1.2 (*)
+     |    |    +--- org.apache.groovy:groovy:4.0.0 -> 4.0.13 (*)
+     |    |    +--- org.apache.groovy:groovy-nio:4.0.0 -> 4.0.13 (*)
      |    |    \--- com.github.tomakehurst:wiremock-jre8-standalone:2.35.0
      |    +--- org.springframework.cloud:spring-cloud-contract-spec:4.0.3 (*)
      |    +--- org.eclipse.jgit:org.eclipse.jgit:6.3.0.202209071007-r -> 6.4.0.202211300538-r
@@ -1401,11 +1385,11 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
      |         +--- net.java.dev.jna:jna:4.1.0
      |         \--- net.java.dev.jna:jna-platform:4.1.0
      |              \--- net.java.dev.jna:jna:4.1.0
-     +--- org.springframework.boot:spring-boot-starter-test:3.0.7 -> 3.1.1 (*)
-     +--- org.springframework.cloud:spring-cloud-contract-wiremock:4.0.3
-     |    +--- org.springframework.boot:spring-boot-starter:3.0.7 -> 3.1.1 (*)
+     +--- org.springframework.boot:spring-boot-starter-test:2.6.15 -> 3.1.1 (*)
+     +--- org.springframework.cloud:spring-cloud-contract-wiremock:3.1.8 -> 4.0.3
+     |    +--- org.springframework.boot:spring-boot-starter:3.0.7 -> 3.1.2 (*)
      |    +--- jakarta.servlet:jakarta.servlet-api:6.0.0
-     |    +--- org.springframework:spring-web:6.0.9 -> 6.0.10 (*)
+     |    +--- org.springframework:spring-web:6.0.9 -> 6.0.11 (*)
      |    +--- com.github.tomakehurst:wiremock-jre8-standalone:2.35.0
      |    +--- org.apache.httpcomponents.client5:httpclient5:5.1.4 -> 5.2.1
      |    |    +--- org.apache.httpcomponents.core5:httpcore5:5.2 -> 5.2.2
@@ -1454,7 +1438,7 @@ testRuntimeClasspath - Runtime classpath of source set 'test'.
      |         |    +--- org.apache.maven.resolver:maven-resolver-util:1.1.1 (*)
      |         |    +--- org.apache.httpcomponents:httpclient:4.5.4 -> 4.5.13 (*)
      |         |    \--- org.apache.httpcomponents:httpcore:4.4.8 -> 4.4.16
-     |         \--- org.springframework:spring-core:6.0.9 -> 6.0.10 (*)
+     |         \--- org.springframework:spring-core:6.0.9 -> 6.0.11 (*)
      +--- org.apache.maven.resolver:maven-resolver-api:1.4.1
      \--- org.sonatype.sisu:sisu-inject-plexus:2.6.0
           +--- org.codehaus.plexus:plexus-component-annotations:1.5.5 -> 1.7.1

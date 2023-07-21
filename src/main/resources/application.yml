@@ -1,3 +1,4 @@
 security:
   authentication:
     header: Authorization
+    apikey: Bearer local-secret

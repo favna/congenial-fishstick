@@ -1,4 +1,4 @@
-# Repro for issue with spring security
+# Repro for issue with liquibase
 
 Steps to reproduce:
 1. Setup Java 17

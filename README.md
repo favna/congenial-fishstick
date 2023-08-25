@@ -2,8 +2,12 @@
 
 Steps to reproduce:
 1. Setup Java 17
-2. Run `./gradlew update`
-3. Gradle will fail with the following error:
+2. Start a Docker Postgres container:
+    ```sh
+    docker run -it --rm -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=postgres postgres:15-alpine
+    ```
+3. Run `./gradlew update`
+4. Gradle will fail with the following error:
 ```
 > Task :update FAILED
 liquibase-plugin: Running the 'main' activity...

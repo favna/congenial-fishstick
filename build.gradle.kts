@@ -1,7 +1,7 @@
 plugins {
     id("java")
     id("org.springframework.boot") version "3.1.2"
-    id("org.liquibase.gradle") version "2.0.4"
+    id("org.liquibase.gradle") version "2.2.0"
 }
 
 group = "com.example"
@@ -22,10 +22,12 @@ liquibase {
         this.arguments = mapOf(
                 "changelogFile" to "src/test/resources/db/changelog/db.changelog-master.yaml",
                 "classpath" to "src/test/resources",
-                "url" to "jdbc:postgresql://localhost:5432/test",
-                "username" to "gpadmin",
-                "password" to "gpadmin",
+                "url" to "jdbc:postgresql://localhost:5432/postgres",
+                "username" to "postgres",
+                "password" to "postgres",
                 "driver" to "org.postgresql.Driver",
+                "database-changelog-table-name" to "DATABASECHANGELOG_DEMO",
+                "database-changelog-lock-table-name" to "DATABASECHANGELOGLOCK_DEMO"
         )
     }
     runList = "main"
@@ -81,9 +83,10 @@ dependencies {
     testImplementation("io.projectreactor:reactor-test:3.5.8")
 
     // Dependencies required for running liquibase for tests
+    liquibaseRuntime("org.postgresql:postgresql:42.6.0")
     liquibaseRuntime("org.liquibase:liquibase-core:4.23.0")
     liquibaseRuntime("info.picocli:picocli:4.7.4")
-    liquibaseRuntime("org.liquibase.ext:liquibase-hibernate5:4.22.0")
+    liquibaseRuntime("org.yaml:snakeyaml:1.33")
 }
 
 tasks.withType<JavaCompile>().configureEach {

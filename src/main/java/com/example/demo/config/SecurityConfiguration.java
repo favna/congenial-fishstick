@@ -16,7 +16,7 @@ import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 import static org.springframework.security.config.web.server.SecurityWebFiltersOrder.AUTHENTICATION;
 
 @Configuration
-class SecurityConfig {
+class SecurityConfiguration {
 	private static final String[] SWAGGER_RESOURCES = {
 			"/swagger-ui.html",
 			"/v3/api-docs/**",

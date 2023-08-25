@@ -57,12 +57,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:${springBootVersion}")
     implementation("org.springframework.boot:spring-boot-starter-security:${springBootVersion}")
 
-    // Spring Cloud dependencies
-    implementation("io.pivotal.spring.cloud:spring-cloud-services-starter-config-client:${pivotalSpringCloudServicesVersion}")
-    implementation("org.springframework.cloud:spring-cloud-starter-bootstrap:${springCloudStarterVersion}")
-
     // Database / service related dependencies
-    implementation("org.apache.velocity:velocity-engine-core:2.3")
     implementation("org.postgresql:r2dbc-postgresql:1.0.2.RELEASE")
     runtimeOnly("org.postgresql:postgresql:42.6.0")
 

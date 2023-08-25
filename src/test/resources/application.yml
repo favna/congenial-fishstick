@@ -1,3 +1,31 @@
+---
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
+    generate-unique-name: true
+    properties:
+      schema: example
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
+    trust: true
+    generate-unique-name: true
+    tomcat:
+      connection-properties: reWriteBatchedInserts=true
+  test:
+    database:
+      replace: NONE # Don't use embedded database, use the one configured above.
+  liquibase:
+    database-change-log-table: DATABASECHANGELOG_MAPPINGMANAGER
+    database-change-log-lock-table: DATABASECHANGELOGLOCK_MAPPINGMANAGER
+    test-rollback-on-update: true
+    enabled: true
+
+
 security:
   authentication:
     header: Authorization

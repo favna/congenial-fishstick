@@ -1,0 +1,6 @@
+# Note: files in the following directory are picked up in alphabetical order!
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/V0001__create_table.sql
+  - include:
+      file: db/changelog/changes/V0002__add_age_column.sql
